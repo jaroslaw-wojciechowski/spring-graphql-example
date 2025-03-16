@@ -1,0 +1,11 @@
+GRAPHQL http://localhost:8080/graphql
+
+query {
+    findCustomerById(id:"67d6d7003626133076fcb8f8") {
+        id
+        firstName
+        lastName
+        age
+        created
+    }
+}

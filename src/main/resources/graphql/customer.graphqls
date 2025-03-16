@@ -1,0 +1,18 @@
+type Customer {
+    id: ID!
+    firstName: String!
+    lastName: String!
+    age: Int!
+    created: String!
+}
+
+# The Root Query for the application
+type Query {
+    findCustomers: [Customer]
+    findCustomerById(id: String!) : Customer
+}
+
+# The Root Mutation for the application
+type Mutation {
+    createCustomer(firstName: String!, lastName: String!, age: Int!) : Customer!
+}

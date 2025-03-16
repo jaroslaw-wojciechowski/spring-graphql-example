@@ -1,0 +1,11 @@
+GRAPHQL http://localhost:8080/graphql
+
+mutation {
+    createCustomer(firstName:"Tom", lastName:"Hardy", age: 39) {
+        id
+        firstName
+        lastName
+        age
+        created
+    }
+}

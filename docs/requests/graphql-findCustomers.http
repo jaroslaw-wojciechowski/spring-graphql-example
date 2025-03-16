@@ -1,0 +1,11 @@
+GRAPHQL http://localhost:8080/graphql
+
+query {
+    findCustomers {
+      id
+      firstName
+      lastName
+      age
+      created
+    }
+}

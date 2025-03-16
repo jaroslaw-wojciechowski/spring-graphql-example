@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: graph-mongo
+
+  data:
+    mongodb:
+      uri: mongodb://root:rootpassword@localhost:27017/graph-mongo?authSource=admin&retryWrites=false
+      auto-index-creation: true
+
+  graphql:
+    graphiql:
+      enabled: true
